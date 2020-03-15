@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0 auto;
+  max-width: 600px;
+}
+ul,
+ol {
+  list-style: none;
+}
+.banner {
+  position: relative;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  overflow: hidden;
+  height: 150px;
+}
+.banner:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+  clear: both;
+}
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.banner .slider_list .swiper-slide {
+  float: left;
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.banner .slider_list a {
+  display: block;
+}
+.banner .slider_list img {
+  display: block;
+  width: 100%;
+}
+.banner .pagination {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.banner .pagination li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  border-radius: 5px;
+  background: #e9e9e9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.banner .pagination li.active {
+  background: #fc6b00
+} 
